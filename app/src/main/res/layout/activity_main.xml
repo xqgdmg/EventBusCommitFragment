@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.eventbuscommitfragment.MainActivity">
+
+    <TextView
+        android:id="@+id/tvGoSengActivity"
+        android:background="#55f"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="tvGoSengActivity"/>
+
+    <TextView
+        android:id="@+id/tvShow"
+        android:layout_marginTop="5dp"
+        android:background="#5500ff00"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="tvShow"/>
+
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_marginTop="5dp"
+        android:background="#55ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>
