@@ -20,6 +20,15 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
+/**
+ * 1：切换 Fragment
+ * 华为报错 java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState，但是不会崩溃
+ * oppo 不会报错
+ * 解决方法：切换的时候 commit() 改为 commitAllowingStateLoss()
+ *
+ * 2：改变文字
+ * 都可以，没有问题
+ */
 public class MainActivity extends Activity {
 
     private TextView tvGoSengActivity;
@@ -36,6 +45,14 @@ public class MainActivity extends Activity {
         initView();
         initFragment();
         initListener();
+
+//        String a = "小小鸟";
+//        String sqlString = "select * from tb_wf_main where trim(WF_NAME) = '   " + a + "  '    ";
+//        String str = "我是一只        '   "+a+"   '        "    ;
+//        Log.e("chris",str);
+//        Log.e("chris",sqlString);
+
+        // 我是一只'小小鸟'
     }
 
     @Override
