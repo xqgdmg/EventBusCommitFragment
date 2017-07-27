@@ -46,11 +46,11 @@ public class MainActivity extends Activity {
         initFragment();
         initListener();
 
-//        String a = "小小鸟";
-//        String sqlString = "select * from tb_wf_main where trim(WF_NAME) = '   " + a + "  '    ";
-//        String str = "我是一只        '   "+a+"   '        "    ;
-//        Log.e("chris",str);
-//        Log.e("chris",sqlString);
+        /*String a = "小小鸟";
+        String sqlString = "select * from table where trim(NAME) = '   " + a + "  '    ";
+        String str = "我是一只        '   "+a+"   '        "    ;
+        Log.e("chris",str);
+        Log.e("chris",sqlString);*/
 
         // 我是一只'小小鸟'
     }
